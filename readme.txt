@@ -14,8 +14,6 @@ Buzzsprout is the only solution you need for publishing, hosting, promoting and 
 You can learn more about Buzzsprout and create your own FREE account at [http://www.buzzsprout.com](http://www.buzzsprout.com). 
 This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
 
-== Features ==
-
 == Installation ==
 1. Download the plugin
 1. Extract into a folder

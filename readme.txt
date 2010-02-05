@@ -1,4 +1,4 @@
-=== Free CDN ===
+=== Buzzsprout Podcasting ===
 Contributors: molehill
 Donate link: http://www.buzzsprout.com/
 Tags: Buzzsprout, RSS, media, feed, podcasting, podcast, episode
@@ -23,9 +23,11 @@ This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, fr
 1. Enable it via Plugins panel
 1. Specify the Buzzsprout feed URL you want to retrieve episodes from and other options under Settings->Buzzsprout Podcasting
 
-==Usage==
+= Usage =
 1. The Buzzsrpout Podcasting plugin drops a new icon onto your "Upload/Insert" toolbar. Click this icon to select the episode you would like to include within your post.
 1. Once you select the episode you would like to include, a shortcode will be added to your post. You can feel free to move this around, to wherever you would like the episode to appear within your post.
 
-== History ==
-* 1.0 Initial version
+== Changelog ==
+
+= 1.0 =
+* Initial version

@@ -1,12 +1,11 @@
 <?php
 /*
 Plugin Name: Buzzsprout Podcasting
-Plugin URI: http://www.buzzsprout.com/
+Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
 Version: 1.0
 Author: Buzzsprout
-Author URI: http://www.buzzsprout.com/wordpress
-Plugin URI: http://www.buzzsprout.com/wordpress
+Author URI: http://www.buzzsprout.com
 */
 
 global $wpdb, $buzzp_plugin_slug, $buzzp_plugin_name, $buzzp_plugin_dir, $buzzp_text_domain;

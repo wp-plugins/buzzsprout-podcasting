@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.0
+Version: 1.0.1
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -94,7 +94,21 @@ function buzzp_load_box()
     else
     {
         include_once(ABSPATH . WPINC . '/feed.php');
+        
+        // we don't want to cache the feed, so let's add a filter
+        function buzzp_remove_cache_time($time)
+        {
+            $time = 0; // don't cache, what the hell
+            return $time;
+        }
+        
+        add_filter('wp_feed_cache_transient_lifetime', 'buzzp_remove_cache_time');
+        
         $rss = fetch_feed($buzzp_options['feed-uri']);
+        
+        // remove the filter!!!!!!!!!!!!!!!
+        remove_filter('wp_feed_cache_transient_lifetime', 'buzzp_remove_cache_time');
+        
         $maxitems = $rss->get_item_quantity($buzzp_options['number-episodes']); 
         $rss_items = $rss->get_items(0, $maxitems); 
         

@@ -4,7 +4,7 @@ Donate link: http://www.buzzsprout.com/
 Tags: Buzzsprout, RSS, media, feed, podcasting, podcast, episode
 Requires at least: 2.7
 Tested up to: 3.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
 
@@ -27,5 +27,13 @@ This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, fr
 
 == Changelog ==
 
+= 1.0.1 =
+* New episodes are now immediately available - prevents RSS cache
+
 = 1.0 =
 * Initial version
+
+== Upgrade Notice ==
+
+= 1.0.1 =
+This version fixes an issue where newly uploaded episodes would not immediately show up on the episode list within WordPress.

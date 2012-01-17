@@ -1,5 +1,6 @@
 <?php
-if(!defined( 'ABSPATH') && !defined('WP_UNINSTALL_PLUGIN'))
+if ( !defined('WP_UNINSTALL_PLUGIN') ) {
     exit();
+}
 	
 delete_option('buzzsprout-podcasting');

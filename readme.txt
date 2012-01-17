@@ -4,7 +4,7 @@ Donate link: http://www.buzzsprout.com/
 Tags: Buzzsprout, RSS, media, feed, podcasting, podcast, episode
 Requires at least: 2.7
 Tested up to: 3.0
-Stable tag: 1.0.1
+Stable tag: 1.2
 
 This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
 
@@ -16,16 +16,20 @@ This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, fr
 
 == Installation ==
 1. Download the plugin
-1. Extract into a folder
-1. Upload the entire folder to `wp-content/plugins/` directory of your WordPress installation
-1. Enable it via Plugins panel
-1. Specify the Buzzsprout feed URL you want to retrieve episodes from and other options under Settings->Buzzsprout Podcasting
+2. Extract into a folder
+3. Upload the entire folder to `wp-content/plugins/` directory of your WordPress installation
+4. Enable it via Plugins panel
+5. Specify the Buzzsprout feed URL you want to retrieve episodes from and other options under Settings->Buzzsprout Podcasting
 
 = Usage =
-1. The Buzzsrpout Podcasting plugin drops a new icon onto your "Upload/Insert" toolbar. Click this icon to select the episode you would like to include within your post.
-1. Once you select the episode you would like to include, a shortcode will be added to your post. You can feel free to move this around, to wherever you would like the episode to appear within your post.
+1. The Buzzsprout Podcasting plugin drops a new option into your "Add Media" window. Click the add media icon and then select the "Buzzsprout Podcasting" tab to select the episode you would like to include within your post.
+2. Once you select the episode you would like to include, a shortcode will be added to your post. You can feel free to move this around, to wherever you would like the episode to appear within your post.
 
 == Changelog ==
+
+= 1.2 =
+* Reworked the plugin to adhere to changes to WordPress core when version 3.3.1 was released. 
+* Now adds a tab to the media upload Thickbox
 
 = 1.0.1 =
 * New episodes are now immediately available - prevents RSS cache
@@ -34,6 +38,9 @@ This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, fr
 * Initial version
 
 == Upgrade Notice ==
+
+= 1.2 =
+This version fixes the issue where the icon would not display and changed the implementation to add a new tab to the media upload tabbed Thickbox.
 
 = 1.0.1 =
 This version fixes an issue where newly uploaded episodes would not immediately show up on the episode list within WordPress.

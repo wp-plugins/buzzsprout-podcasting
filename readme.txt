@@ -3,7 +3,7 @@ Contributors: molehill
 Donate link: http://www.buzzsprout.com/
 Tags: Buzzsprout, RSS, media, feed, podcasting, podcast, episode
 Requires at least: 2.7
-Tested up to: 3.0
+Tested up to: 3.3.1
 Stable tag: 1.2
 
 This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.

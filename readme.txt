@@ -9,7 +9,7 @@ Stable tag: 1.2.1
 This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
 
 == Description ==
-Buzzsprout is the best way to publish a podcast online. From secure and reliable hosting to full iTunes support, HTML5 players, show statistics, and of course, this WordPress plugin, Buzzsprout has everything you need to publish and promote your podcast! 
+[Buzzsprout](http://www.buzzsprout.com) is the best way to publish a podcast online. From secure and reliable hosting to full iTunes support, HTML5 players, show statistics, and of course, this WordPress plugin, Buzzsprout has everything you need to publish and promote your podcast! 
 
 = The Buzzsprout WordPress Plugin =
 The Buzzsprout podcasting plugin fetches your podcast episodes from your Buzzsprout feed URL and gives you the option to embed episodes in your page or post on-the-fly. It really is that simple. 
@@ -20,6 +20,34 @@ The Buzzsprout podcasting plugin fetches your podcast episodes from your Buzzspr
 
 You can learn more about Buzzsprout and create a FREE account at 
 [www.buzzsprout.com](http://www.buzzsprout.com).
+
+= More reasons you’ll love Buzzsprout: =
+
+= Secure Hosting Dedicated to Your Podcast =
+Whether you have a large show or you’re just getting started, a hosting provider is an important piece to a successful podcast. Why? It’s built specifically for your podcast. From upload speeds to download speeds, audio optimization, tagging and show statistics, Buzzsprout helps your podcast grow.
+
+= Complete iTunes Support =
+A full interactive walkthrough on how to submit your podcast feed to iTunes and get your podcast published in the world’s largest podcast catalog.
+
+* iTunes podcast specifications support
+* Byte-range request support
+* Optimized show description and tagging
+* Upload iTunes artwork
+
+= Podcast Migration Tool =
+Want to switch from your old podcast hosting server?  Buzzsprout’s podcast migration tool lets you drop your feed URL in Buzzsprout, then takes care of the rest.
+
+= FeedBurner =
+Buzzsprout allows you to have as much control over your RSS feed as you want by providing you with a feed that can be run through FeedBurner.
+
+= HTML5 and Flash Audio Players =
+Choose from 3 HTML5 and Flash audio players to embed in your wordpress site. All players automatically update every time you publish a new episode.
+
+= Play Count Statistics =
+Tracking your show’s growth is important. Buzzsprout provides statistics like podcast plays over time, all time plays, and play count trend so you can see the response to each episode over time.
+
+= Want to Learn More About Starting a Podcast? =
+Learn how with Buzzsprout’s free [how to create a podcast guide](http://www.buzzsprout.com/resources/how-to-start-your-own-podcast/).
 
 == Installation ==
 1. Download the plugin

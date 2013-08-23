@@ -1,0 +1,141 @@
+.box
+{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 20px;
+}
+
+.box ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.box li
+{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.box li a
+{
+    display: block;
+    line-height: 24px;
+    height: 24px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #111;
+    text-indent: 10px;
+}
+
+.box h2
+{
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 24px;
+    height: 32px;
+    background: url('../images/buzzsprout32.png') left top no-repeat;
+    line-height: 32px;
+    font-weight: normal;
+    text-shadow: #fff;
+    font-style: italic;
+    padding: 0 0 0 48px;
+    margin: 0 0 15px;
+    color: #464646;
+}
+
+.box li a:hover
+{
+    color: #fff;
+    background: #82bc47;
+    border-color: #82bc47;
+}
+
+.box .error
+{
+    color: #777;
+}
+
+.box .error a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.box .error a:hover
+{
+    color: #82bc47;
+}
+
+.box .major-info
+{
+    padding: 10px 10px 10px 58px;
+    width: 400px;
+    height: 37px;
+    background: url('../images/info.png') no-repeat 10px 10px !important;
+    margin: 100px auto;
+    border: 1px solid #ddd;
+}
+
+.box .major-error
+{
+    padding: 10px 10px 10px 58px;
+    width: 400px;
+    height: 37px;
+    background: url('../images/warning.png') no-repeat 10px 10px !important;
+    margin: 100px auto;
+    border: 1px solid #ddd;
+}
+
+#icon-options-buzzp
+{
+    background: url('../images/buzzsprout32.png') no-repeat !important;
+}
+
+div h3
+{
+    margin: 45px 0 15px;
+}
+
+div.buzzp label
+{
+    display: block;
+    margin-bottom: 15px;
+}
+
+div.buzzp label *
+{
+    float: left;
+    margin-right: 5px;
+}
+
+div.buzzp label span
+{
+    height: 22px;
+    line-height: 22px;
+}
+
+div.buzzp .field-name
+{
+    width: 215px;
+    display: block;
+}
+
+div.buzzp .guide
+{
+    color: #555;
+    font-style: italic;
+}
+
+.clear
+{
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+}
+
+div.buzzp .how-it-works img
+{
+    display: block;
+    margin-top: 10px;
+}

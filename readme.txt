@@ -9,10 +9,17 @@ Stable tag: 1.2.1
 This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
 
 == Description ==
-Buzzsprout is the only solution you need for publishing, hosting, promoting and tracking your podcast on the web. It eliminates the hassles and technical know-how required with self-managed podcast publishing. Whether you're just starting out or have been podcasting for years, Buzzsprout is the easiest way to get your podcast online.
+Buzzsprout is the best way to publish a podcast online. From secure and reliable hosting to full iTunes support, HTML5 players, show statistics, and of course, this WordPress plugin, Buzzsprout has everything you need to publish and promote your podcast! 
 
-You can learn more about Buzzsprout and create your own FREE account at [http://www.buzzsprout.com](http://www.buzzsprout.com). 
-This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
+= The Buzzsprout WordPress Plugin =
+The Buzzsprout podcasting plugin fetches your podcast episodes from your Buzzsprout feed URL and gives you the option to embed episodes in your page or post on-the-fly. It really is that simple. 
+
+* Comes free with all Buzzsprout plans
+* Is easy to install into your WordPress dashboard
+* Works with all self hosted (WordPress.org) accounts
+
+You can learn more about Buzzsprout and create a FREE account at 
+[www.buzzsprout.com](http://www.buzzsprout.com).
 
 == Installation ==
 1. Download the plugin

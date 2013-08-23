@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.2
+Version: 1.2.1
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -114,7 +114,7 @@ class Buzzsprout_Podcasting{
 		register_setting( self::PLUGIN_SLUG, self::PLUGIN_SLUG, array( __CLASS__, 'buzzsprout_options_validate' ) );
 		add_settings_section( 'buzzsprout_settings', __( 'Buzzsprout Settings', self::PLUGIN_TEXT_DOMAIN ), array( __CLASS__, 'buzzsprout_settings_section_cb'), self::PLUGIN_SLUG );
 		add_settings_field( 'buzzsprout_feed_address', __( 'Buzzsprout feed address (URL)', self::PLUGIN_TEXT_DOMAIN ), array( __CLASS__, 'buzzsprout_feed_address_cb' ), self::PLUGIN_SLUG, 'buzzsprout_settings' );
-		add_settings_field( 'buzzsprout_include_flash', __( 'Include a Flash player?', self::PLUGIN_TEXT_DOMAIN ), array( __CLASS__, 'buzzsprout_include_flash_cb' ), self::PLUGIN_SLUG, 'buzzsprout_settings' );
+		add_settings_field( 'buzzsprout_include_flash', __( 'Include audio player?', self::PLUGIN_TEXT_DOMAIN ), array( __CLASS__, 'buzzsprout_include_flash_cb' ), self::PLUGIN_SLUG, 'buzzsprout_settings' );
 		add_settings_field( 'buzzsprout_number_episodes', __( 'Number of Episodes to return', self::PLUGIN_TEXT_DOMAIN ), array( __CLASS__, 'buzzsprout_number_episodes_cb' ), self::PLUGIN_SLUG, 'buzzsprout_settings' );
 	}
 
@@ -240,7 +240,7 @@ class Buzzsprout_Podcasting{
 		$feed_uri = $buzzsprout_otions['feed-uri'];
 	    }
 
-	    if (!preg_match_all('|^https?://(www\.)?buzzsprout\.com/([0-9]+)\.rss$|i', $feed_uri, &$matches)) return false;
+	    if (!preg_match_all('|^https?://(www\.)?buzzsprout\.com/([0-9]+)\.rss$|i', $feed_uri, $matches)) return false;
 	    return isset($matches[2][0]) ? $matches[2][0] : false;
 	}
 	
@@ -273,7 +273,7 @@ class Buzzsprout_Podcasting{
 	 */
 	function buzzsprout_item_create_short_tag($buzz_item_link, $player){
 	    // http://www.buzzsprout.com/96/1917-ep-9-rams-vs-titans.mp3
-	    if (!preg_match_all('|^https?://(www\.)?buzzsprout\.com/[0-9]+/([0-9]+).*|i', $buzz_item_link, &$matches)) return false;
+	    if (!preg_match_all('|^https?://(www\.)?buzzsprout\.com/[0-9]+/([0-9]+).*|i', $buzz_item_link, $matches)) return false;
 
 	    if (!isset($matches[2][0])) return false;
 

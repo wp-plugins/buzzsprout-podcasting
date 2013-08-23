@@ -3,8 +3,8 @@ Contributors: molehill
 Donate link: http://www.buzzsprout.com/
 Tags: Buzzsprout, RSS, media, feed, podcasting, podcast, episode
 Requires at least: 2.7
-Tested up to: 3.3.1
-Stable tag: 1.2
+Tested up to: 3.6
+Stable tag: 1.2.1
 
 This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
 
@@ -26,6 +26,10 @@ This Buzzsprout Podcasting plugin fetches content from a Buzzsprout feed URL, fr
 2. Once you select the episode you would like to include, a shortcode will be added to your post. You can feel free to move this around, to wherever you would like the episode to appear within your post.
 
 == Changelog ==
+
+= 1.2.1 =
+* Updated for Buzzsprout new HTML5 Audio Player
+* Compatability update for PHP 5.4x
 
 = 1.2 =
 * Reworked the plugin to adhere to changes to WordPress core when version 3.3.1 was released. 

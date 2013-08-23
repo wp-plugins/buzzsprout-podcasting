@@ -83,6 +83,9 @@ Learn how with Buzzsprout’s free [how to create a podcast guide](http://www.bu
 
 == Upgrade Notice ==
 
+= 1.2.1 =
+This version fixes an issue when running PHP 5.4x
+
 = 1.2 =
 This version fixes the issue where the icon would not display and changed the implementation to add a new tab to the media upload tabbed Thickbox.
 

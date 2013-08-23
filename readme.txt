@@ -56,6 +56,11 @@ Learn how with Buzzsprout’s free [how to create a podcast guide](http://www.bu
 4. Enable it via Plugins panel
 5. Specify the Buzzsprout feed URL you want to retrieve episodes from and other options under Settings->Buzzsprout Podcasting
 
+== Screenshots ==
+1. Buzzsprout’s simple wordpress plugin sits in your “add media” bin and fetches episodes from your Buzzsprout account for easy embedding into your pages or posts.
+2. More than just a plugin, Buzzsprout provides beautifully designed HTML5 Audio Players (with Flash and Silverlight fallback) options for embedding.
+3. The large player automatically updates with your newest episodes and can be customized to only fetch episodes with specific tags.
+
 = Usage =
 1. The Buzzsprout Podcasting plugin drops a new option into your "Add Media" window. Click the add media icon and then select the "Buzzsprout Podcasting" tab to select the episode you would like to include within your post.
 2. Once you select the episode you would like to include, a shortcode will be added to your post. You can feel free to move this around, to wherever you would like the episode to appear within your post.

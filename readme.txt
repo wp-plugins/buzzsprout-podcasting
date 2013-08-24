@@ -1,7 +1,8 @@
 === Buzzsprout Podcasting ===
 Contributors: molehill
 Donate link: http://www.buzzsprout.com/
-Tags: Buzzsprout, RSS, media, feed, podcasting, podcast, episode
+Tags: audio, audio player, blip.tv, blubrry, buzz, Buzzsprout, castmyblog, dashboard, embed, enclosure, episode, episodes, feed, feedburner, flash, flv, id3, HTML5, HTML5 audio, iphone, iTunes, m4v, media, mediacaster, media player, mp3, MP4, MTR, MU, multi-site, multisite, music, player, plugin, podbean, podcast, podcast.de, podcaster, podcasting, podlove, Post, posts, rss, rss2, seriously simple podcasting, simple, simple podcasting, social, statistics, stats, TSG, ustream, viddler, video, webm, wordpress MU, wordpressmu, WP-boxCast, youtube, zune
+
 Requires at least: 2.7
 Tested up to: 3.6
 Stable tag: 1.2.1

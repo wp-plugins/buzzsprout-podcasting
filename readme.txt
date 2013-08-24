@@ -6,7 +6,7 @@ Requires at least: 2.7
 Tested up to: 3.6
 Stable tag: 1.2.1
 
-This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post.
+Pull podcast episodes from your Buzzsprout account and quickly add them to your blog posts with beautiful HTML5 audio players.
 
 == Description ==
 [Buzzsprout](http://www.buzzsprout.com) is the best way to publish a podcast online. From secure and reliable hosting to full iTunes support, HTML5 players, show statistics, and of course, this WordPress plugin, Buzzsprout has everything you need to publish and promote your podcast! 

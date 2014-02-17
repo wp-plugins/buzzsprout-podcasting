@@ -4,8 +4,8 @@ Donate link: http://www.buzzsprout.com/
 Tags: audio, audio player, blubrry, buzzsprout, castmyblog, embed, enclosure, episode, episodes, feed, feedburner, flash, flv, id3, HTML5, HTML5 audio, iphone, iTunes, m4v, media, mediacaster, media player, mp3, MP4, music, player, plugin, podbean, podcast, podcast.de, podcaster, podcasting, podlove, post, posts, rss, rss2, seriously simple podcasting, simple, simple podcasting, social, soundcloud, statistics, stats, webm, WP-boxCast, youtube, zune
 
 Requires at least: 2.7
-Tested up to: 3.6
-Stable tag: 1.2.1
+Tested up to: 3.8.1
+Stable tag: 1.2.2
 
 Pull podcast episodes from your Buzzsprout account and quickly add them to your blog posts with beautiful HTML5 audio players.
 
@@ -67,6 +67,9 @@ Learn how with Buzzsprout’s free [how to create a podcast guide](http://www.bu
 2. Once you select the episode you would like to include, a shortcode will be added to your post. You can feel free to move this around, to wherever you would like the episode to appear within your post.
 
 == Changelog ==
+
+= 1.2.2 =
+* Updated to prevent RSS feed caching
 
 = 1.2.1 =
 * Updated for Buzzsprout new HTML5 Audio Player

@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.2.1
+Version: 1.2.2
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -79,7 +79,7 @@ class Buzzsprout_Podcasting{
 		<?php elseif( !self::is_feed_valid( $buzzsprout_options['feed-uri'] ) ): error_log(self::is_feed_valid( $buzzsprout_options['feed-uri'] ) ); ?>
 			<p class="major-info error"><?php printf(__('A valid Buzzsprout feed URL cannot be found. Please use the form under %s to update your settings.', self::PLUGIN_TEXT_DOMAIN), '<a href="'.admin_url('options-general.php?page=buzzsprout-podcasting').'">'.__('Settings', self::PLUGIN_TEXT_DOMAIN).'</a>'); ?></p>
 		<?php else:
-			$rss = fetch_feed( $buzzsprout_options['feed-uri'] );
+			$rss = fetch_feed( $buzzsprout_options['feed-uri'].'?'.strtotime("now") );
 			$maxitems = $rss->get_item_quantity($buzzsprout_options['number-episodes']); 
 			$items = $rss->get_items( 0, $maxitems ); ?>
 			<h2><?php _e( 'Pick an item', self::PLUGIN_TEXT_DOMAIN ); ?></h2>

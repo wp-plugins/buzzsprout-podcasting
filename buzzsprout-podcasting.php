@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.2.2
+Version: 1.2.3
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -74,6 +74,9 @@ class Buzzsprout_Podcasting{
 		media_upload_header(); 
 		$buzzsprout_options = get_option( self::PLUGIN_SLUG ); ?>
 		<div class="box">
+			<div style="float:right;">
+				<p style="margin-top: 0;"><strong>Enjoying the Buzzsprout Plugin?</strong><br>Your <a href="https://wordpress.org/support/view/plugin-reviews/buzzsprout-podcasting" target="_blank">ratings and reviews</a> are much appreciated!</p>
+			</div>
 		<?php if ( !$buzzsprout_options ): ?>
 			<p class="major-info error"><?php printf( __( 'You have not specified a valid Buzzsprout feed URL yet. Please use the form under %s %s to do so.', self::PLUGIN_TEXT_DOMAIN ), __( self::PLUGIN_NAME ),'<a href="' . admin_url( 'options-general.php?page=buzzsprout-podcasting' ) . '" target="_blank">' . __( 'Settings page', self::PLUGIN_TEXT_DOMAIN ).'</a>' ); ?></p>
 		<?php elseif( !self::is_feed_valid( $buzzsprout_options['feed-uri'] ) ): error_log(self::is_feed_valid( $buzzsprout_options['feed-uri'] ) ); ?>
@@ -82,14 +85,14 @@ class Buzzsprout_Podcasting{
 			$rss = fetch_feed( $buzzsprout_options['feed-uri'].'?'.strtotime("now") );
 			$maxitems = $rss->get_item_quantity($buzzsprout_options['number-episodes']); 
 			$items = $rss->get_items( 0, $maxitems ); ?>
-			<h2><?php _e( 'Pick an item', self::PLUGIN_TEXT_DOMAIN ); ?></h2>
+			<h2><?php _e( 'Select an Episode', self::PLUGIN_TEXT_DOMAIN ); ?></h2>
 			<ul>
 			<?php if ($maxitems == 0): ?>
 				<li class="error"><?php _e( 'No feed items can be retrieved.', self::PLUGIN_TEXT_DOMAIN ); ?></li>
 			<?php else: ?>
 			<?php foreach ( $items as $item ): // Loop through each feed item and display each item as a hyperlink. ?>
 				<li>
-				    <a class="buzzp-item" href="#" title="<?php echo esc_attr( __('Click to add this episode into the post', self::PLUGIN_TEXT_DOMAIN ) ); ?>" data-short-tag="<?php echo self::buzzsprout_item_create_short_tag($item->get_permalink(), $buzzsprout_options['include-flash']); ?>"><?php echo $item->get_title(); ?></a>
+					<a class="buzzp-item" href="#" title="<?php echo esc_attr( __('Click to add this episode into the post', self::PLUGIN_TEXT_DOMAIN ) ); ?>" data-short-tag="<?php echo self::buzzsprout_item_create_short_tag($item->get_permalink(), $buzzsprout_options['include-flash']); ?>"><?php echo $item->get_title(); ?></a>
 				</li>
 			<?php endforeach; ?>
 			<?php endif; ?>

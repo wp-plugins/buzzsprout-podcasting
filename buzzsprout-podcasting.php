@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.2.3
+Version: 1.2.4
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -289,7 +289,7 @@ class Buzzsprout_Podcasting{
 	 * @desc Check if the feed provided is valid and if so, the Settings updated message will be displayed, if not, the Invalid Buzzsprout Feed URL error message will be displayed. 
 	 *
 	 */
-	function buzzsprout_admin_notice(){
+	public static function buzzsprout_admin_notice(){
 		global $pagenow;
 		if ($pagenow == 'options-general.php' && $_GET['page'] == self::PLUGIN_SLUG) {
 			if ( (isset($_GET['updated']) && $_GET['updated'] == 'true') || (isset($_GET['settings-updated']) && $_GET['settings-updated'] == 'true') ) {

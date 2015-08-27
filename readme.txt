@@ -5,7 +5,7 @@ Tags: audio, audio player, Blubrry, buzzsprout, castmyblog, embed, enclosure, ep
 
 Requires at least: 2.7
 Tested up to: 4.0
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 
 Pull podcast episodes from your Buzzsprout account and quickly add them to your blog posts with beautiful HTML5 audio players.
 
@@ -68,8 +68,11 @@ Learn how with Buzzsprout’s free [how to create a podcast guide](http://www.bu
 
 == Changelog ==
 
+= 1.2.5 =
+* Updated code for latest wordpress 
+
 = 1.2.4 =
-* Enhancement for latest wordpress build
+* Enhancement for latest wordpress build 
 
 = 1.2.3 =
 * Added a few new icons and a link to review the plugin

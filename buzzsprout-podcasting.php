@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.2.4
+Version: 1.2.5
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -274,7 +274,7 @@ class Buzzsprout_Podcasting{
 	 * @param string Link of the buzz media file
 	 * @param mixed Whether player should be enabled
 	 */
-	function buzzsprout_item_create_short_tag($buzz_item_link, $player){
+	public static function buzzsprout_item_create_short_tag($buzz_item_link, $player){
 	    // http://www.buzzsprout.com/96/1917-ep-9-rams-vs-titans.mp3
 	    if (!preg_match_all('|^https?://(www\.)?buzzsprout\.com/[0-9]+/([0-9]+).*|i', $buzz_item_link, $matches)) return false;
 
@@ -283,7 +283,6 @@ class Buzzsprout_Podcasting{
 	    $tag = sprintf("[buzzsprout episode='%s' player='%s']", trim($matches[2][0]), $player ? 'true' : 'false');
 	    return $tag;
 	}
-	
 	
 	/**
 	 * @desc Check if the feed provided is valid and if so, the Settings updated message will be displayed, if not, the Invalid Buzzsprout Feed URL error message will be displayed. 

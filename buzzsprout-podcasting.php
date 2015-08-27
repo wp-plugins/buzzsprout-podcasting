@@ -3,7 +3,7 @@
 Plugin Name: Buzzsprout Podcasting
 Plugin URI: http://www.buzzsprout.com/wordpress
 Description: This plugin fetches content from a Buzzsprout feed URL, from which user can pick an episode and add it into the post
-Version: 1.2.5
+Version: 1.2.6
 Author: Buzzsprout
 Author URI: http://www.buzzsprout.com
 */
@@ -92,7 +92,7 @@ class Buzzsprout_Podcasting{
 			<?php else: ?>
 			<?php foreach ( $items as $item ): // Loop through each feed item and display each item as a hyperlink. ?>
 				<li>
-					<a class="buzzp-item" href="#" title="<?php echo esc_attr( __('Click to add this episode into the post', self::PLUGIN_TEXT_DOMAIN ) ); ?>" data-short-tag="<?php echo self::buzzsprout_item_create_short_tag($item->get_permalink(), $buzzsprout_options['include-flash']); ?>"><?php echo $item->get_title(); ?></a>
+					<a class="buzzp-item" href="#" title="<?php echo esc_attr( __('Click to add this episode into the post', self::PLUGIN_TEXT_DOMAIN ) ); ?>" data-short-tag="<?php echo self::buzzsprout_item_create_short_tag($item->get_enclosure()->get_link(), $buzzsprout_options['include-flash']); ?>"><?php echo $item->get_title(); ?></a>
 				</li>
 			<?php endforeach; ?>
 			<?php endif; ?>
